@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "dangallaghermarketing",
+    siteUrl: "https://dangallaghermarketing.co.uk",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
