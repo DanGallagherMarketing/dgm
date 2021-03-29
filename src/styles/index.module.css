@@ -1,0 +1,10 @@
+.Section {
+  grid-column: 4 / -4;
+  padding: 25px;
+  margin: 40px auto;
+  grid-column: 1 / -1;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 3px black;
+}

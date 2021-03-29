@@ -1,0 +1,111 @@
+.Form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-gap: 15px; */
+  /* box-shadow: 0px 3px 5px #ccc; */
+  padding: 25px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  /* row-gap: 15px;
+  column-gap: 15px; */
+}
+
+Form > * {
+  margin: 8px;
+}
+.SubmitButton {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border: none;
+  box-sizing: border-box;
+  padding: 15px;
+  grid-column: 1 / -1;
+  width: min-content;
+}
+.SubmitButton:hover,
+.SubmitButton:active {
+  cursor: pointer;
+  color: #fff;
+  background-color: black;
+}
+
+.InputField {
+  padding: 15px;
+  /* margin: 15px; */
+  display: block;
+  width: 100%;
+}
+
+.TwoCols {
+  grid-column: 1 / -1;
+}
+
+.Title {
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  /* margin-bottom: 10px; */
+}
+
+.Required:after {
+  content: " *";
+  color: red;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  background-color: white;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+.StyledDropdown {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1.4em + 2px),
+    calc(100% - 15px) calc(1.4em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 2.4em;
+  background-repeat: no-repeat;
+}
+
+.StyledDropdown:focus {
+  background-image: linear-gradient(45deg, black 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, black 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1.4em, calc(100% - 20px) 1.4em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 2.4em;
+  background-repeat: no-repeat;
+  border-color: black;
+  outline: 0;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 150px;
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .Form {
+    padding: 5%;
+  }
+}
+@media (max-width: 550px) {
+  .Form {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .Form {
+    padding: 10px;
+  }
+}

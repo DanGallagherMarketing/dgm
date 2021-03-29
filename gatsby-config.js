@@ -1,10 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "dangallaghermarketing",
+    title: "Dan Gallagher Marketing",
     siteUrl: "https://dangallaghermarketing.co.uk",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        url: "https://dangallaghermarketing.co.uk/graphql",
+      },
+    },
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-google-analytics",

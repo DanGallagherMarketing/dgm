@@ -1,0 +1,26 @@
+.BackgroundImage {
+  height: 75vh;
+  width: 100%;
+  opacity: 1 !important;
+  background-color: rgba(0, 0, 0, 0.568);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3px black;
+  grid-column: 1 / -1;
+}
+
+.Main {
+  margin: 0 10px;
+}
+
+.Section {
+  grid-column: 4 / -4;
+  padding: 25px;
+  margin: 40px auto;
+  grid-column: 1 / -1;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 3px black;
+}
