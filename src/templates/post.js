@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout/Layout";
 import { graphql } from "gatsby";
+import Form from "../components/Form/Form";
 import * as classes from "../styles/index.module.css";
 const post = (props) => {
   console.log(props.pageContext);
@@ -9,6 +10,9 @@ const post = (props) => {
     <Layout title="Blog" hero={props.data.hero.childImageSharp.fluid}>
       <SEO title="Blog" />
       <section className={classes.Section}>{props.pageContext.content}</section>
+      <section className={classes.Section}>
+        <Form />
+      </section>
     </Layout>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout/Layout";
 import { graphql } from "gatsby";
+import Form from "../components/Form/Form";
 import * as classes from "../styles/index.module.css";
 
 const about = ({ data }) => {
@@ -34,7 +35,7 @@ const about = ({ data }) => {
 
       <section className={classes.Section}>
         <h2>Book A Free Consultation</h2>
-        <p>Insert Form Here</p>
+        <Form />
       </section>
     </Layout>
   );

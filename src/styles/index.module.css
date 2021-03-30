@@ -8,3 +8,16 @@
   border-radius: 5px;
   box-shadow: 0 0 3px black;
 }
+
+.Section > h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+.TwoColGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

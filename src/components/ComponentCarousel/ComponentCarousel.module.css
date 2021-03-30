@@ -1,0 +1,87 @@
+.ComponentCarousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-653.1088913245535px);
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+}
+
+.ComponentCarousel > div {
+  position: absolute;
+  background-color: white;
+  margin: 20px 5px;
+}
+
+.CarouselContainer {
+  /* border: 1px solid #ccc; */
+  margin: auto;
+  margin-top: 80px;
+  position: relative;
+  width: 350px;
+  height: 450px;
+  perspective: 4000px;
+}
+.CarouselContainer > * {
+  box-sizing: border-box;
+}
+
+.CarouselCell {
+  /* transform: scaleX(0.5); */
+  position: absolute;
+  width: 95%;
+  /* margin: 5px; */
+  left: 10px;
+  bottom: 80px;
+}
+
+.CarouselCell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(2) {
+  transform: rotateY(30deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(3) {
+  transform: rotateY(60deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(4) {
+  transform: rotateY(90deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(5) {
+  transform: rotateY(120deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(6) {
+  transform: rotateY(150deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(7) {
+  transform: rotateY(180deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(8) {
+  transform: rotateY(210deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(9) {
+  transform: rotateY(240deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(10) {
+  transform: rotateY(270deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(11) {
+  transform: rotateY(300deg) translateZ(653.1088913245535px);
+}
+.CarouselCell:nth-child(12) {
+  transform: rotateY(330deg) translateZ(653.1088913245535px);
+}
+
+.ButtonContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarouselNavButton {
+  padding: 10px 15px;
+  width: 130px;
+}

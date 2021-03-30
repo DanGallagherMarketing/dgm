@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout/Layout";
 import { graphql } from "gatsby";
+import Form from "../components/Form/Form";
 import * as classes from "../styles/index.module.css";
 
 const googleAds = ({ data }) => {
@@ -31,6 +32,10 @@ const googleAds = ({ data }) => {
           commentary on next actions to take.
         </p>
       </section>
+      <section className={classes.Section}>
+        <h2>Book A Free Consultation</h2>
+        <Form />
+      </section>
     </Layout>
   );
 };
@@ -39,7 +44,7 @@ export default googleAds;
 
 export const query = graphql`
   query {
-    hero: file(relativePath: { eq: "about-hero.jpg" }) {
+    hero: file(relativePath: { eq: "google-ads.webp" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64

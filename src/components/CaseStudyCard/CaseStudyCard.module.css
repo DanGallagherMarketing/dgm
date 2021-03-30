@@ -1,0 +1,14 @@
+.CaseStudyCard {
+  max-width: 350px;
+  margin: auto;
+  height: 450px;
+  padding: 20px;
+  /* background-color: #fff; */
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.705);
+}
+
+.CaseStudyCard > picture,
+img {
+  margin-bottom: 10px;
+}
