@@ -7,7 +7,10 @@ import * as classes from "../styles/index.module.css";
 
 const post = (props) => {
   return (
-    <Layout title="Blog" hero={props.data.hero.childImageSharp.fluid}>
+    <Layout
+      title="Blog"
+      hero={props.data.hero ? props.data.hero.childImageSharp.fluid : null}
+    >
       <SEO title="Blog" />
       <section
         className={classes.Section}
