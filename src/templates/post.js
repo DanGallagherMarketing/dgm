@@ -9,7 +9,7 @@ const post = (props) => {
   return (
     <Layout
       title="Blog"
-      hero={props.data.hero ? props.data.hero.childImageSharp.fluid : null}
+      hero={props.data ? props.data.hero.childImageSharp.fluid : null}
     >
       <SEO title="Blog" />
       <section
