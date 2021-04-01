@@ -12,11 +12,13 @@ const Layout = (props) => {
   return (
     <>
       <Header />
-      <BackgroundImage
-        title={props.title}
-        src={props.hero}
-        className={classes.BackgroundImage}
-      />
+      {props.hero && (
+        <BackgroundImage
+          title={props.title}
+          src={props.hero}
+          className={classes.BackgroundImage}
+        />
+      )}
       <main className={classes.Main}>{props.children}</main>
       <Footer />
     </>

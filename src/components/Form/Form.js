@@ -29,7 +29,14 @@ const Form = (props) => {
   const serviceOptions = ["Landing Page Design", "Google Ads", "Facebook Ads"];
 
   return (
-    <form className={classes.Form} onSubmit={handleSubmit(onSubmit)}>
+    <form
+      name="contact"
+      netlify
+      data-netlify-honeypot="bot-field"
+      className={classes.Form}
+      onSubmit={handleSubmit(onSubmit)}
+    >
+      <input type="hidden" name="form-name" value="contact" />
       {/* register your input into the hook by invoking the "register" function */}
       {props.title ? <h2 className={classes.Title}>{props.title}</h2> : null}
       <div>

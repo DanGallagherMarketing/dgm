@@ -1,7 +1,7 @@
 import React from "react";
 
-const services = () => {
+const test = () => {
   return <div></div>;
 };
 
-export default services;
+export default test;

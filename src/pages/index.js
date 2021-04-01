@@ -135,14 +135,11 @@ const Home = ({ data }) => {
       </section>
 
       <section className={classes.Section}>
-        <h2>Case Studies</h2>
-      </section>
-      <section className={classes.Section}>
         <h2>How To Begin Working With Me</h2>
         <ol>
           <li>
-            You schedule a free consultation (or you can ask a question by
-            submitting an enquiry)
+            You submit an enquiry below or send an email to
+            daniel@dangallaghermarketing.co.uk
           </li>
           <li>
             We discuss your situation and what exactly you want me to help you
