@@ -9,8 +9,31 @@ const Form = (props) => {
   const [submitStatus, setSubmitStatus] = useState("unsubmitted");
   const [loading, setLoading] = useState(false);
 
-  const onSubmit = () => {
-    console.log("Submitted");
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const onSubmit = (data) => {
+    console.log(data);
+    setLoading(true);
+    console.log("submitting...");
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        ...data,
+      }),
+    })
+      .then(() => {
+        setLoading(false);
+        setSubmitStatus("success");
+      })
+      .catch((err) => setSubmitStatus("fail"));
   };
 
   let submitMsg;
@@ -31,10 +54,11 @@ const Form = (props) => {
   return (
     <form
       name="contact"
-      netlify
+      data-netlify="true"
       data-netlify-honeypot="bot-field"
       className={classes.Form}
       onSubmit={handleSubmit(onSubmit)}
+      // onClick={() => onSubmit()}
     >
       <input type="hidden" name="form-name" value="contact" />
       {/* register your input into the hook by invoking the "register" function */}
