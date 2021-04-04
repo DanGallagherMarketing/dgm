@@ -32,6 +32,7 @@ const Form = (props) => {
       .then(() => {
         setLoading(false);
         setSubmitStatus("success");
+        reset();
       })
       .catch((err) => setSubmitStatus("fail"));
   };

@@ -1,0 +1,38 @@
+Overview
+Bennison Brown are mortgage broker, offering financial advice through recommending the most suitable mortgage deals to their customers.
+
+People looking for a mortgage will either go directly to their bank, or through a mortgage broker. Around 70% of mortgages are estimated to be arranged by brokers.
+
+In order to be profitable, an individual mortgage adviser must regularly process mortgage applications, so it’s essential that that they have a steady stream of leads.
+
+My job was to ensure they can get this steady stream of leads, while being able to scale up/down depending on week by week capacity to take them on.
+
+
+Challenges
+They already had a Google Ads campaign running, but the lead quality wasn’t good enough for them to confidently scale up the business.
+
+A lot of their enquiries were from people who didn’t properly understand the business, and weren’t actually in the market for a mortgage.
+
+Strategy
+After auditing their current campaign, I found the following issues:
+
+Their max bids were too low for keywords that showed intent to use a broker
+The keywords were all broad match, causing their ads to show for irrelevant search terms
+They didn’t make use of their negative keywords list
+In order to get a reliable stream of good leads, I needed to make sure that everyone clicking the ad was the type of person we wanted to click our ads.
+
+In essence – to make sure every click on our ads was for a search term that implies intent to use a broker. 
+
+In order to do this, I did the following:
+
+Worked with them to create a list of words that imply a lack of intent to use, and added them to a negative keywords list
+Worked with them to get a list of high-intent keywords, and added these to new ad groups
+Added a higher max CPC bid so that we were competitive for high-intent keywords
+We can measure the success of this through seeing an increase in our conversion rate.
+Outcome
+Before I joined, the campaign’s conversion rate was 2.04%
+
+Over the first 3 months since, this rose to 3.12%.
+
+
+I then created a separate campaign, and over time I optimised the ads, keywords and negative keywords. This campaign had a conversion rate of 5.17% – a 253% increase on the original 2.04%.
