@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "https://dangallaghermarketing.co.uk/graphql",
+        url: "https://danielg93.sg-host.com/graphql",
       },
     },
     "gatsby-plugin-image",
@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/dgm-logo.png",
       },
     },
     "gatsby-transformer-remark",

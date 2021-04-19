@@ -1,7 +1,7 @@
 import React from "react";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout/Layout";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Form from "../components/Form/Form";
 import * as classes from "../styles/index.module.css";
 
@@ -66,70 +66,46 @@ const Home = ({ data }) => {
           clients.  Quality of service is my priority, and my ever-expanding
           skill set allows me to do it better than most.
         </p>
-        <button>Read More</button>
+        <Link to="/about-me">
+          <button>Read More</button>
+        </Link>
       </section>
 
-      <section style={{ margin: "150px auto 150px auto" }}>
+      <section
+        style={{ margin: "200px auto 150px auto" }}
+        id="case-study-carousel"
+      >
+        {/* <h2 style={{ textAlign: "center" }}>Case Studies</h2> */}
         <ComponentCarousel>
           <CaseStudyCard
             fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 1"
-            text="Increased conversion rate by 253%"
+            title="Bennison Brown"
+            text="Increased conversion rate by 253% with Google Ads"
+            link="/case-studies/bennison-brown-mortgages"
           />
           <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 2"
-            text="Increased conversion rate by 253%"
+            fluid={data.altorSolicitors.childImageSharp.fluid}
+            title="Altor Solicitors"
+            text="Increased conversion rate by X% with Google Ads"
+            link="/case-studies/altor-employment-solicitors"
           />
           <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 3"
-            text="Increased conversion rate by 253%"
+            fluid={data.industryCV.childImageSharp.fluid}
+            title="Industry CV"
+            text="Landing Page Design"
+            link="/case-studies/industry-cv"
           />
           <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 4"
-            text="Increased conversion rate by 253%"
+            fluid={data.henryMalcolm.childImageSharp.fluid}
+            title="Henry Malcolm"
+            text="Landing Page Design"
+            link="/case-studies/henry-malcolm"
           />
           <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 5"
-            text="Increased conversion rate by 253%"
-          />
-          <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 6"
-            text="Increased conversion rate by 253%"
-          />
-          <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 7"
-            text="Increased conversion rate by 253%"
-          />
-          <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 8"
-            text="Increased conversion rate by 253%"
-          />
-          <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 9"
-            text="Increased conversion rate by 253%"
-          />
-          <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 10"
-            text="Increased conversion rate by 253%"
-          />
-          <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 11"
-            text="Increased conversion rate by 253%"
-          />
-          <CaseStudyCard
-            fluid={data.bennisonBrown.childImageSharp.fluid}
-            title="Case Study 12"
-            text="Increased conversion rate by 253%"
+            fluid={data.riseRinseRepeat.childImageSharp.fluid}
+            title="Rise Rinse Repeat"
+            text="Landing Page Design"
+            link="/case-studies/rise-rinse-repeat"
           />
         </ComponentCarousel>
       </section>
@@ -163,6 +139,13 @@ const Home = ({ data }) => {
         <h2>Book A Free Consultation</h2>
         <Form />
       </section>
+      {/* <img
+        height="1"
+        width="1"
+        style="display:none;"
+        alt=""
+        src="https://px.ads.linkedin.com/collect/?pid=3488489&conversionId=4634513&fmt=gif"
+      /> */}
     </Layout>
   );
 };
@@ -183,7 +166,37 @@ export const query = graphql`
       relativePath: { eq: "caseStudies/bennison-brown.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 700, quality: 100) {
+        fluid(maxWidth: 340, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    altorSolicitors: file(relativePath: { eq: "caseStudies/altor-logo.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 340, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    industryCV: file(relativePath: { eq: "caseStudies/icv-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 340, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    henryMalcolm: file(relativePath: { eq: "caseStudies/henry-malcolm.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 340, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    riseRinseRepeat: file(
+      relativePath: { eq: "caseStudies/rise-rinse-repeat.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 340, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

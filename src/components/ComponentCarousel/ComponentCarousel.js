@@ -5,6 +5,7 @@ const ComponentCarousel = (props) => {
   const cellCount = Children.count(props.children);
 
   const translateZ = Math.round(cellSize / 2 / Math.tan(Math.PI / cellCount));
+  console.log(translateZ);
 
   const [style, setStyle] = useState({
     transform: `translateZ(-${translateZ}px) rotateY(0deg)`,
@@ -13,12 +14,15 @@ const ComponentCarousel = (props) => {
   const [index, setIndex] = useState(0);
 
   const rotateCarousel = (direction) => {
-    const angle = (index / cellCount) * -360;
-    console.log(index);
+    const newIndex = direction === "l" ? index - 1 : index + 1;
+    setIndex(newIndex);
+    const angle = (newIndex / cellCount) * -360;
+
     setStyle({
       transform: `translateZ(-${translateZ}px) rotateY(${angle}deg)`,
     });
-    setIndex(direction === "l" ? index - 1 : index + 1);
+
+    console.log(index);
   };
 
   return (

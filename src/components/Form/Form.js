@@ -50,7 +50,11 @@ const Form = (props) => {
       </span>
     );
 
-  const serviceOptions = ["Landing Page Design", "Google Ads", "Facebook Ads"];
+  const serviceOptions = [
+    "Landing Page Design",
+    "Google Ads Management",
+    "A Google Ads Account Audit",
+  ];
 
   return (
     <form
@@ -133,6 +137,15 @@ const Form = (props) => {
         <input className={classes.SubmitButton} type="submit" value="Submit" />
       )}
       {submitMsg}
+      {submitStatus === "success" ? (
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          alt=""
+          src="https://px.ads.linkedin.com/collect/?pid=3488489&conversionId=4634513&fmt=gif"
+        />
+      ) : null}
     </form>
   );
 };
