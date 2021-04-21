@@ -62,9 +62,9 @@ const Home = ({ data }) => {
       <section className={classes.Section}>
         <h2>About Me</h2>
         <p>
-          I'm a 24 year old freelancer, currently looking to take on new
-          clients.  Quality of service is my priority, and my ever-expanding
-          skill set allows me to do it better than most.
+          I'm a 25 year old freelancer who has been advertising with Google Ads
+          since 2017. I optimise Google Ads campaigns, provide bespoke reports,
+          and create blazing fast, beautiful landing pages.
         </p>
         <Link to="/about-me">
           <button>Read More</button>
@@ -80,13 +80,13 @@ const Home = ({ data }) => {
           <CaseStudyCard
             fluid={data.bennisonBrown.childImageSharp.fluid}
             title="Bennison Brown"
-            text="Increased conversion rate by 253% with Google Ads"
+            text="Increased Conversion Rate by 529%% with Google Ads"
             link="/case-studies/bennison-brown-mortgages"
           />
           <CaseStudyCard
             fluid={data.altorSolicitors.childImageSharp.fluid}
             title="Altor Solicitors"
-            text="Increased conversion rate by X% with Google Ads"
+            text="Increased Return on Ad Spend by 293% with Google Ads"
             link="/case-studies/altor-employment-solicitors"
           />
           <CaseStudyCard

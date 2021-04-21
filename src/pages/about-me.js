@@ -15,21 +15,22 @@ const about = ({ data }) => {
         <p>
           In 2017 I graduated from the University of Surrey with a 1st class
           honours degree in Economics. Since November 2017, I have worked as a
-          digital marketer, managing Google and Facebook ads campaigns. I
-          specialise in Pay Per Click marketing on Facebook and Google, as well
-          as landing page design.
+          digital marketer, managing Google Ads campaigns.
         </p>
       </section>
       <section className={classes.Section}>
         <h2>What Makes Me Different</h2>
+        <h3>I'm Also A Web Developer</h3>
         <p>
-          I am also a full stack web developer, meaning I can create bespoke,
-          blazing fast landing pages without the design limitations that come
-          with block web builders. For those who know a thing or two about web
-          development, my preferred stack is MERN/PERN, and I also have
-          experience using the Gastby.js react framework and serverless. I also
-          have years of experience working with data visualisation tools
-          (Microsoft Power BI and Google Data Studio).
+          I have experience with full stack web development, and my workflow
+          involves using hyper-modern technologies (JAMstack with GatsbyJS) to
+          create blazing fast pages.
+        </p>
+        <h3>I Am Experienced As A Data Analyst</h3>
+        <p>
+          I'm very comfortable using data vizualisation technologies (Google
+          Data Studio and Microsoft Power BI) to produce beautiful bespoke
+          reports for Google Ads.
         </p>
       </section>
 

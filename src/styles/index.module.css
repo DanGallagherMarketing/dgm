@@ -20,11 +20,7 @@
   box-shadow: 0 0 3px black;
 }
 
-.Section > h2,
-h3,
-h4,
-h5,
-h6 {
+.Section h2 {
   text-align: center;
 }
 

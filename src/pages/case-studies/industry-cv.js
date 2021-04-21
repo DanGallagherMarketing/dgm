@@ -8,10 +8,10 @@ import "../../styles/posts.css";
 const CaseStudy = ({ data }) => {
   return (
     <Layout
-      title="Landing Page Design - Henry Malcom"
+      title="Landing Page Design - Industry CV"
       hero={data.hero.childImageSharp.fluid}
     >
-      <SEO title="Landing Page Design - Henry Malcom" />
+      <SEO title="Landing Page Design - Industry CV" />
 
       <section className={classes.IframeSection}>
         <h2>View their landing page below!</h2>

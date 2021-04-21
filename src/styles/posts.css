@@ -3,5 +3,15 @@ p {
 
 h3 {
   margin-top: 35px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+article p,
+h3 {
+  text-align: left;
+}
+
+article h2 {
+  color: #00887a;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.692);
 }

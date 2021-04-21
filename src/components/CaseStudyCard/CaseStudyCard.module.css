@@ -28,3 +28,6 @@ picture {
 .CaseStudyCard a {
   text-decoration: none;
 }
+.CaseStudyCard h3 {
+  text-align: center;
+}
